@@ -15,7 +15,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(title="EcoTrack API")
 
 # Setup CORS
-allowed_origins = os.getenv("FRONTEND_URL", "http://localhost:5173,http://localhost:3000").split(",")
+allowed_origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
