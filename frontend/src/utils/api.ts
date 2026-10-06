@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const rawUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const rawUrl = import.meta.env.VITE_API_URL || 'https://ecotrack-2-y03x.onrender.com/api';
 const API_BASE_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl}/api`;
 
 export const api = axios.create({
